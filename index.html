@@ -156,7 +156,7 @@ try{ if(!sessionStorage.getItem('introSeen') && !matchMedia('(prefers-reduced-mo
 <section class="block" id="others" data-view="추가 경험" style="padding-top:0">
   <div class="container">
     <div class="s-head" data-reveal><h2>그 밖의 프로젝트</h2><p>실무에서 맡은 작은 과제, 학회 논문, 공모전과 학교 프로젝트를 모았습니다.</p></div>
-    <p class="hint">제목을 누르면 배경과 한 일이 펼쳐지고, 일부 항목은 작업 이미지도 볼 수 있습니다.</p>
+    <p class="hint">제목을 누르면 배경과 한 일이 펼쳐지고, 최종 결과물이 남아 있는 항목은 이미지도 볼 수 있습니다.</p>
     <div class="o-group" data-reveal>
       <p class="o-gh"><b>실무 추가 과제</b><span>더편한샵에서 맡은 과제 중 대표 프로젝트보다 범위가 작거나, 검증 단계에서 멈춘 과제입니다.</span></p>
       <div class="others">
@@ -184,31 +184,34 @@ try{ if(!sessionStorage.getItem('introSeen') && !matchMedia('(prefers-reduced-mo
       <details class="other" data-log="other_open" data-label="기업광고의 스필오버 효과 논문">
         <summary><span class="o-title">기업광고의 스필오버 효과 논문</span><span class="o-sub">2024.11 한국상품학회 추계학술대회 최우수 논문상, 4인 공동</span><span class="o-plus" aria-hidden="true"></span></summary>
         <dl><div><dt>배경</dt><dd>기업 이미지를 알리는 기업광고가 같은 회사 제품광고의 성과까지 끌어올리는지, 실제 기업 데이터로 검증한 연구는 많지 않았습니다.</dd></div><div><dt>한 일</dt><dd>글로벌 스포츠 기업 N사의 국내 모바일 광고 데이터(2020년 8월~9월)로 노출, 클릭, 매출에 대한 회귀분석을 했습니다. 제품광고는 Continuous(연속 집행)와 Flighting(간격을 두고 집중 집행) 전략으로 나눠 비교했습니다.</dd></div><div><dt>결과</dt><dd>기업광고는 모든 제품광고의 노출을 높였습니다. Flighting 전략 제품광고에서는 노출, 클릭, 매출 세 지표 모두에서 효과가 확인됐고, Continuous 전략은 노출에서만 유의했습니다.</dd></div></dl>
-        <figure class="o-fig"><button type="button" class="zoom" aria-label="이미지 크게 보기"><img src="assets/img/other-paper-adspend.webp" alt="논문에 실은 광고비 추이 그래프" loading="lazy"></button><figcaption>논문에 실은 광고비 추이입니다. G 캠페인(기업광고) 기간에 A 제품군(연속 집행)과 T 컬렉션(간격을 두고 집행)이 함께 집행됐습니다. 광고비는 자연로그 척도입니다.</figcaption></figure>
+        <figure class="o-fig n1"><div class="o-shots"><button type="button" class="zoom" aria-label="이미지 크게 보기"><img src="assets/img/other-paper-adspend.webp" alt="논문에 실은 광고비 추이 그래프" loading="lazy"></button></div><figcaption>논문에 실은 광고비 추이 그래프입니다. G 캠페인(기업광고) 기간에 A 제품군(연속 집행)과 T 컬렉션(간격을 두고 집행)이 함께 집행됐습니다.</figcaption></figure>
       </details>
       <details class="other" data-log="other_open" data-label="SM-Data 데이터 시각화 공모전">
         <summary><span class="o-title">SM-Data 데이터 시각화 공모전</span><span class="o-sub">2024.05 숙명여대 데이터 시각화 공모전 우수상, 팀, Tableau</span><span class="o-plus" aria-hidden="true"></span></summary>
         <dl><div><dt>배경</dt><dd>대졸자 절반 이상(52.3%)이 전공과 무관한 직업을 택한다는 조사에서 출발해, 수강한 과목이 실제 진로와 어떻게 이어지는지 보고자 했습니다.</dd></div><div><dt>한 일</dt><dd>졸업생 취업 데이터의 학번 중복 제거 전처리와 최종 대시보드 설명을 맡았습니다. 팀은 교육과정 데이터와 취업 데이터를 과목명 기준으로 연결해 학과별 취업 직종과 전공 일치 여부를 Tableau로 시각화했습니다.</dd></div><div><dt>결과</dt><dd>과목 개요를 텍스트마이닝해 수강 과목별 전공능력을 워드클라우드로 보여주고, 전공과 다른 길로 간 졸업생도 수강 과목에서 기른 역량과 취업 분야가 이어진다는 인사이트를 냈습니다.</dd></div></dl>
-        <figure class="o-fig"><button type="button" class="zoom" aria-label="이미지 크게 보기"><img src="assets/img/other-smdata-dashboard.webp" alt="Tableau 취업 데이터 대시보드 설명 화면" loading="lazy"></button><figcaption>최종 Tableau 대시보드 설명 화면입니다. 학과 안에서 취업한 직종, 직종별 비율, 학과 간 비교를 한 화면에 담았습니다.</figcaption></figure>
+        <figure class="o-fig n3"><div class="o-shots"><button type="button" class="zoom" aria-label="이미지 크게 보기"><img src="assets/img/o-sm-1.webp" alt="학과별 취업 직종 Tableau 대시보드" loading="lazy"></button><button type="button" class="zoom" aria-label="이미지 크게 보기"><img src="assets/img/o-sm-2.webp" alt="취업 직종 비교 Tableau 대시보드" loading="lazy"></button><button type="button" class="zoom" aria-label="이미지 크게 보기"><img src="assets/img/o-sm-3.webp" alt="졸업생별 수강 과목 워드클라우드 결론 화면" loading="lazy"></button></div><figcaption>제출한 결과물입니다. 학과 대시보드, 취업 직종 비교 대시보드, 워드클라우드 해석 화면 순서입니다.</figcaption></figure>
       </details>
       </div>
     </div>
     <div class="o-group" data-reveal>
       <p class="o-gh"><b>공모전 및 학교 프로젝트</b><span>문제를 찾고 서비스로 제안한 팀 프로젝트입니다. 수상 결과가 확인되지 않은 공모전은 결과를 적지 않았습니다.</span></p>
       <div class="others">
+      <details class="other" data-log="other_open" data-label="CJ 외식 마케팅 아이디어 챌린지">
+        <summary><span class="o-title">CJ 외식 마케팅 아이디어 챌린지</span><span class="o-sub">2025.01 CJ프레시웨이, 청년다방 마케팅 제안, 3인 팀</span><span class="o-plus" aria-hidden="true"></span></summary>
+        <dl><div><dt>배경</dt><dd>즉석떡볶이 프랜차이즈 경쟁이 심해진 상황에서, 청년다방이 1020 고객의 매장 방문을 늘릴 통합 마케팅 아이디어가 과제였습니다.</dd></div><div><dt>한 일</dt><dd>신학기 프로모션 청년다와방을 제안했습니다. 숏폼 영상, 토핑 성격 테스트, 매장에서 떡을 25cm에 맞춰 자르면 할인해 주는 2025 롱떡 챌린지를 하나의 캠페인으로 묶었습니다.</dd></div><div><dt>근거</dt><dd>1020 대상 설문(1월 12일~20일)에서 응답자 90% 이상이 청년다방 커피를 마셔 본 적이 없었고, 그중 약 35%는 커피를 파는지 몰랐습니다. 그래서 식사 후 커피를 할인하는 식후샷 이벤트와 커피 신메뉴를 함께 제안했습니다.</dd></div></dl>
+        <figure class="o-fig n5"><div class="o-shots"><button type="button" class="zoom" aria-label="이미지 크게 보기"><img src="assets/img/o-cj-1.webp" alt="2025 롱떡 챌린지 오프라인 포스터" loading="lazy"></button><button type="button" class="zoom" aria-label="이미지 크게 보기"><img src="assets/img/o-cj-2.webp" alt="롱떡 챌린지 숏폼 썸네일" loading="lazy"></button><button type="button" class="zoom" aria-label="이미지 크게 보기"><img src="assets/img/o-cj-3.webp" alt="청년다방 성격 테스트 시작 화면" loading="lazy"></button><button type="button" class="zoom" aria-label="이미지 크게 보기"><img src="assets/img/o-cj-4.webp" alt="청년다방 성격 테스트 질문 화면" loading="lazy"></button><button type="button" class="zoom" aria-label="이미지 크게 보기"><img src="assets/img/o-cj-5.webp" alt="청년다방 커피 신메뉴 컵 시안" loading="lazy"></button></div><figcaption>제안서에 넣은 시안입니다. 롱떡 챌린지 포스터와 숏폼 썸네일, 토핑 성격 테스트 화면, 커피 신메뉴 컵 시안 순서입니다.</figcaption></figure>
+      </details>
       <details class="other" data-log="other_open" data-label="트래블 이노베이션 공모전">
         <summary><span class="o-title">트래블 이노베이션 공모전</span><span class="o-sub">2026.06~07 지역축제 방탈출 기획, 4인 팀</span><span class="o-plus" aria-hidden="true"></span></summary>
         <dl><div><dt>배경</dt><dd>역사를 소재로 한 지역축제가 볼거리 위주로 흘러, 방문객이 오래 머물고 소비할 이유가 약하다고 봤습니다.</dd></div><div><dt>한 일</dt><dd>역사 기반 방탈출 축제 아이디어를 처음 제안했고, 팀 논의를 거쳐 안동 하회마을을 무대로 정했습니다. 제안서에서 참가자가 쓰는 웹 앱 화면 기획, 장소 제안, 예산안을 맡았습니다.</dd></div><div><dt>과정</dt><dd>사라진 하회탈을 찾는 이야기에 역할별 히든미션(암행어사, 탈 도둑 등)을 붙이고, 가이드북, 힌트를 주는 웹 화면, 굿즈와 경품 구조를 하나의 동선으로 묶었습니다.</dd></div></dl>
       </details>
       <details class="other" data-log="other_open" data-label="문화데이터 공모전">
         <summary><span class="o-title">문화데이터 공모전</span><span class="o-sub">2024.07 아이디어 부문, 지역 축제 추천 플랫폼, 3인 팀</span><span class="o-plus" aria-hidden="true"></span></summary>
-        <dl><div><dt>배경</dt><dd>해마다 1,170개가 넘는 지역축제가 열리지만 비슷한 프로그램이 반복돼, 방문객이 취향에 맞는 축제를 찾기 어렵다고 봤습니다.</dd></div><div><dt>한 일</dt><dd>취향과 기간을 고르면 축제를 추천하고 주변 놀거리와 맛집까지 이어 주는 흐름을 잡았습니다. 축제 검색량 데이터를 형태소 분석해 분류하고, 블로그 제목을 크롤링해 축제별 연관 키워드를 뽑는 방안을 냈습니다.</dd></div><div><dt>과정</dt><dd>블로그 키워드 빈도분석과 워드클라우드, 방문객 수 회귀분석을 진행했고, 축제 유형보다 예산이 방문객 수에 유의한 변수라는 점을 확인했습니다.</dd></div></dl>
-        <figure class="o-fig"><button type="button" class="zoom" aria-label="이미지 크게 보기"><img src="assets/img/other-culture-wordcloud.webp" alt="송도바람축제 블로그 키워드 워드클라우드" loading="lazy"></button><figcaption>송도바람축제를 다룬 블로그 글에서 뽑은 연관 키워드 워드클라우드입니다.</figcaption></figure>
+        <dl><div><dt>배경</dt><dd>해마다 1,170개가 넘는 지역축제가 열리지만 비슷한 프로그램이 반복돼, 방문객이 취향에 맞는 축제를 찾기 어렵다고 봤습니다.</dd></div><div><dt>한 일</dt><dd>취향과 기간을 고르면 축제를 추천하고 주변 놀거리와 맛집까지 이어 주는 흐름을 잡았습니다. 축제 검색량 데이터를 형태소 분석해 분류하고, 블로그 제목을 크롤링해 축제별 연관 키워드를 뽑는 방안을 냈습니다.</dd></div><div><dt>과정</dt><dd>블로그 키워드 빈도분석과 방문객 수 회귀분석을 진행했고, 축제 유형보다 예산이 방문객 수에 유의한 변수라는 점을 확인했습니다.</dd></div></dl>
       </details>
       <details class="other" data-log="other_open" data-label="미래도서관 공모전">
-        <summary><span class="o-title">미래도서관 공모전</span><span class="o-sub">2024.01~04 국립중앙도서관, 시니어 독서 플랫폼 제안, 팀</span><span class="o-plus" aria-hidden="true"></span></summary>
-        <dl><div><dt>배경</dt><dd>고령층 독서율이 낮고, 공공도서관의 시니어 프로그램과 전용 공간도 부족했습니다.</dd></div><div><dt>한 일</dt><dd>시니어가 직접 책과 프로그램을 추천하고 콘텐츠를 만드는 독서 플랫폼 Senior to Senior를 제안했습니다.</dd></div><div><dt>과정</dt><dd>국민 독서실태 조사와 공공도서관 시니어 이용자 연구를 근거로, 가치를 나누고 싶은 시니어와 콘텐츠가 필요한 시니어를 잇는 구조로 설계했습니다.</dd></div></dl>
-        <figure class="o-fig"><button type="button" class="zoom" aria-label="이미지 크게 보기"><img src="assets/img/other-library-sketch.webp" alt="S2S 앱 화면 손 스케치" loading="lazy"></button><figcaption>팀 회의에서 그린 S2S 앱 화면 스케치입니다. 홈, 인기 도서 목록, 상세 화면으로 이어지는 흐름입니다.</figcaption></figure>
+        <summary><span class="o-title">미래도서관 공모전</span><span class="o-sub">2024.01~04 국립중앙도서관, 시니어 플랫폼 가나다란 제안, 팀</span><span class="o-plus" aria-hidden="true"></span></summary>
+        <dl><div><dt>배경</dt><dd>60세 이상 도서관 회원 비율은 6.02%(2023년, 도서관 정보나루)로 낮았고, 기존 노인 서비스는 일시적인 편의 도구에 머물렀습니다.</dd></div><div><dt>한 일</dt><dd>활동적인 시니어가 콘텐츠를 만들고 다른 시니어가 이용하는 Senior to Senior 앱 가나다란을 제안했습니다. 시니어가 녹음한 오디오북과 도서 팟캐스트, 시니어가 가르치는 클래스, 커뮤니티를 담았습니다.</dd></div><div><dt>과정</dt><dd>도서관 정보나루의 연령별 인기 대출 도서 데이터로 60대 이상 인기 도서를 첫 화면에 보여주고, 오디오북 유무에 따라 듣기 또는 가까운 도서관 대출로 이어지게 설계했습니다.</dd></div></dl>
       </details>
       <details class="other" data-log="other_open" data-label="한국산업단지공단 공공데이터 공모전">
         <summary><span class="o-title">한국산업단지공단 공공데이터 공모전</span><span class="o-sub">산업단지 안전사고 예측 알림 서비스 제리미, 팀</span><span class="o-plus" aria-hidden="true"></span></summary>
@@ -216,12 +219,18 @@ try{ if(!sessionStorage.getItem('introSeen') && !matchMedia('(prefers-reduced-mo
       </details>
       <details class="other" data-log="other_open" data-label="DATA 111, Your-K">
         <summary><span class="o-title">DATA 111, Your-K</span><span class="o-sub">2023.07 메타버스로 외래관광객 관광 문제 해결, 팀</span><span class="o-plus" aria-hidden="true"></span></summary>
-        <dl><div><dt>배경</dt><dd>지자체 관광 메타버스는 접속률이 낮았고, 외래관광객은 여행 전 공공기관 사이트를 거의 쓰지 않았습니다(2019 외래관광조사).</dd></div><div><dt>한 일</dt><dd>외래관광객이 가상 공간에서 한국 지역을 미리 체험하고 추천 경로를 받는 Your-K를 제안했습니다.</dd></div><div><dt>과정</dt><dd>2019 상세 방문지 데이터로 네트워크 분석을 해 전주 추천 경로를 짜고, 카드 데이터로 전주 예상 경비를 계산했습니다.</dd></div></dl>
-        <figure class="o-fig"><button type="button" class="zoom" aria-label="이미지 크게 보기"><img src="assets/img/other-data111-chart.webp" alt="전북 지역 활동 목적 순위 막대 차트" loading="lazy"></button><figcaption>전주 추천의 근거로 만든 전북 지역 활동 목적 순위 차트입니다.</figcaption></figure>
+        <dl><div><dt>배경</dt><dd>외래관광객 방문이 서울과 일부 지역에 몰렸고, 외래관광객은 여행 전 공공기관 관광 사이트를 거의 쓰지 않았습니다(2019 외래관광조사).</dd></div><div><dt>한 일</dt><dd>데이터 분석과 발표 자료 구성을 맡았습니다. 2019년과 2022년 외래관광객 실태조사로 미국, 일본, 중국 관광객의 방문지 네트워크를 그려 서울 쏠림을 보여줬습니다.</dd></div><div><dt>과정</dt><dd>분석을 근거로 외래관광객이 가상 공간에서 지역을 미리 체험하고 추천 경로를 받는 Your-K를 제안하고, 전주를 예시로 추천 경로와 예상 경비를 정리했습니다.</dd></div></dl>
+        <figure class="o-fig n3"><div class="o-shots"><button type="button" class="zoom" aria-label="이미지 크게 보기"><img src="assets/img/o-d111-1.webp" alt="내 손 안에 한국 여행 Your-K 발표 표지" loading="lazy"></button><button type="button" class="zoom" aria-label="이미지 크게 보기"><img src="assets/img/o-d111-2.webp" alt="2019년과 2022년 방문지 권역 네트워크 비교 슬라이드" loading="lazy"></button><button type="button" class="zoom" aria-label="이미지 크게 보기"><img src="assets/img/o-d111-3.webp" alt="방문지역 내부 이동과 외부 이동 비교 슬라이드" loading="lazy"></button></div><figcaption>최종 발표 자료입니다. 표지, 방문지 권역 네트워크 비교, 지역별 내부 이동과 외부 이동 비교 슬라이드 순서입니다.</figcaption></figure>
+      </details>
+      <details class="other" data-log="other_open" data-label="마케팅전략, 올리브영">
+        <summary><span class="o-title">마케팅전략, 올리브영</span><span class="o-sub">2023.04~06 교내 마케팅전략 수업, 5인 팀</span><span class="o-plus" aria-hidden="true"></span></summary>
+        <dl><div><dt>배경</dt><dd>혜택만 챙기고 떠나는 체리슈머 고객을 어떻게 다시 오게 할지가 주제였습니다.</dd></div><div><dt>한 일</dt><dd>뷰티 고관여자 데이터를 제로 파티(설문)와 퍼스트 파티(앱 활동, 검색 기록, 구매 내역, 푸시 반응)로 나눠 수집 구조를 설계했습니다. 최종 발표 자료에서는 체리슈머 정의와 앱 화면 제안 부분을 만들었습니다.</dd></div><div><dt>과정</dt><dd>수집한 데이터를 바탕으로 체리슈머의 재방문을 늘리는 메시지 시나리오와 데이터 기반 개인화 서비스를 제안했습니다.</dd></div></dl>
+        <figure class="o-fig n3"><div class="o-shots"><button type="button" class="zoom" aria-label="이미지 크게 보기"><img src="assets/img/o-oy-1.webp" alt="올리브영 체리슈머를 잡아라 발표 표지" loading="lazy"></button><button type="button" class="zoom" aria-label="이미지 크게 보기"><img src="assets/img/o-oy-2.webp" alt="발표 목차" loading="lazy"></button><button type="button" class="zoom" aria-label="이미지 크게 보기"><img src="assets/img/o-oy-3.webp" alt="올리브영 뷰티 고관여자 제로 파티 데이터 슬라이드" loading="lazy"></button></div><figcaption>최종 발표 자료입니다. 표지, 목차, 고객 데이터 수집 설계 슬라이드 순서입니다.</figcaption></figure>
       </details>
       <details class="other" data-log="other_open" data-label="스파이더코어 산학 프로젝트">
-        <summary><span class="o-title">스파이더코어 산학 프로젝트</span><span class="o-sub">딥러닝 링크 예측 모델 개선, 산학 스터디</span><span class="o-plus" aria-hidden="true"></span></summary>
-        <dl><div><dt>배경</dt><dd>유전자 상호작용 데이터로 연결 여부를 예측하는 AutoEncoder 모델의 성능을 높이는 과제였습니다.</dd></div><div><dt>한 일</dt><dd>활성화 함수, 가중치 초기화, 옵티마이저, 손실 함수를 정리해 동료와 함께 발표했고, 모델의 활성화 함수를 ReLU에서 LeakyReLU, PReLU로 바꿔 실험했습니다.</dd></div><div><dt>과정</dt><dd>AUC로 테스트 성능을 확인하며, 배치 크기와 에폭을 바꿨을 때 학습에 생기는 차이를 정리했습니다.</dd></div></dl>
+        <summary><span class="o-title">스파이더코어 산학 프로젝트</span><span class="o-sub">2023.04~08 기업 스파이더코어 산학 협력</span><span class="o-plus" aria-hidden="true"></span></summary>
+        <dl><div><dt>배경</dt><dd>기업이 제공한 AutoEncoder 기반 링크 예측 모델(유전자 상호작용 데이터)을 최적화하는 과제였습니다.</dd></div><div><dt>한 일</dt><dd>활성화 함수, 가중치 초기화, 옵티마이저, 손실 함수를 정리해 동료와 함께 발표했고, 모델의 활성화 함수를 ReLU에서 LeakyReLU, PReLU로 바꿔 실험했습니다.</dd></div><div><dt>결과</dt><dd>기존 AutoEncoder보다 GNN 계열 GraphSAGE의 정확도가 더 높게 나왔다는 결과를 정리했습니다.</dd></div></dl>
+        <figure class="o-fig n2"><div class="o-shots"><button type="button" class="zoom" aria-label="이미지 크게 보기"><img src="assets/img/o-sp-1.webp" alt="스파이더코어 산학 협력 프로젝트 중간 발표 슬라이드" loading="lazy"></button><button type="button" class="zoom" aria-label="이미지 크게 보기"><img src="assets/img/o-sp-2.webp" alt="전체 결과 요약 슬라이드" loading="lazy"></button></div><figcaption>발표 자료입니다. 중간 발표 슬라이드와 전체 결과 요약 순서입니다.</figcaption></figure>
       </details>
       </div>
     </div>
