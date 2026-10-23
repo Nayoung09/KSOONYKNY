@@ -156,7 +156,7 @@ try{ if(!sessionStorage.getItem('introSeen') && !matchMedia('(prefers-reduced-mo
 <section class="block" id="others" data-view="추가 경험" style="padding-top:0">
   <div class="container">
     <div class="s-head" data-reveal><h2>그 밖의 프로젝트</h2><p>실무에서 맡은 작은 과제, 학회 논문, 공모전과 학교 프로젝트를 모았습니다.</p></div>
-    <p class="hint">제목을 누르면 배경과 한 일이 펼쳐집니다.</p>
+    <p class="hint">제목을 누르면 배경과 한 일이 펼쳐지고, 일부 항목은 작업 이미지도 볼 수 있습니다.</p>
     <div class="o-group" data-reveal>
       <p class="o-gh"><b>실무 추가 과제</b><span>더편한샵에서 맡은 과제 중 대표 프로젝트보다 범위가 작거나, 검증 단계에서 멈춘 과제입니다.</span></p>
       <div class="others">
@@ -184,10 +184,12 @@ try{ if(!sessionStorage.getItem('introSeen') && !matchMedia('(prefers-reduced-mo
       <details class="other" data-log="other_open" data-label="기업광고의 스필오버 효과 논문">
         <summary><span class="o-title">기업광고의 스필오버 효과 논문</span><span class="o-sub">2024.11 한국상품학회 추계학술대회 최우수 논문상, 4인 공동</span><span class="o-plus" aria-hidden="true"></span></summary>
         <dl><div><dt>배경</dt><dd>기업 이미지를 알리는 기업광고가 같은 회사 제품광고의 성과까지 끌어올리는지, 실제 기업 데이터로 검증한 연구는 많지 않았습니다.</dd></div><div><dt>한 일</dt><dd>글로벌 스포츠 기업 N사의 국내 모바일 광고 데이터(2020년 8월~9월)로 노출, 클릭, 매출에 대한 회귀분석을 했습니다. 제품광고는 Continuous(연속 집행)와 Flighting(간격을 두고 집중 집행) 전략으로 나눠 비교했습니다.</dd></div><div><dt>결과</dt><dd>기업광고는 모든 제품광고의 노출을 높였습니다. Flighting 전략 제품광고에서는 노출, 클릭, 매출 세 지표 모두에서 효과가 확인됐고, Continuous 전략은 노출에서만 유의했습니다.</dd></div></dl>
+        <figure class="o-fig"><button type="button" class="zoom" aria-label="이미지 크게 보기"><img src="assets/img/other-paper-adspend.webp" alt="논문에 실은 광고비 추이 그래프" loading="lazy"></button><figcaption>논문에 실은 광고비 추이입니다. G 캠페인(기업광고) 기간에 A 제품군(연속 집행)과 T 컬렉션(간격을 두고 집행)이 함께 집행됐습니다. 광고비는 자연로그 척도입니다.</figcaption></figure>
       </details>
       <details class="other" data-log="other_open" data-label="SM-Data 데이터 시각화 공모전">
         <summary><span class="o-title">SM-Data 데이터 시각화 공모전</span><span class="o-sub">2024.05 숙명여대 데이터 시각화 공모전 우수상, 팀, Tableau</span><span class="o-plus" aria-hidden="true"></span></summary>
         <dl><div><dt>배경</dt><dd>대졸자 절반 이상(52.3%)이 전공과 무관한 직업을 택한다는 조사에서 출발해, 수강한 과목이 실제 진로와 어떻게 이어지는지 보고자 했습니다.</dd></div><div><dt>한 일</dt><dd>졸업생 취업 데이터의 학번 중복 제거 전처리와 최종 대시보드 설명을 맡았습니다. 팀은 교육과정 데이터와 취업 데이터를 과목명 기준으로 연결해 학과별 취업 직종과 전공 일치 여부를 Tableau로 시각화했습니다.</dd></div><div><dt>결과</dt><dd>과목 개요를 텍스트마이닝해 수강 과목별 전공능력을 워드클라우드로 보여주고, 전공과 다른 길로 간 졸업생도 수강 과목에서 기른 역량과 취업 분야가 이어진다는 인사이트를 냈습니다.</dd></div></dl>
+        <figure class="o-fig"><button type="button" class="zoom" aria-label="이미지 크게 보기"><img src="assets/img/other-smdata-dashboard.webp" alt="Tableau 취업 데이터 대시보드 설명 화면" loading="lazy"></button><figcaption>최종 Tableau 대시보드 설명 화면입니다. 학과 안에서 취업한 직종, 직종별 비율, 학과 간 비교를 한 화면에 담았습니다.</figcaption></figure>
       </details>
       </div>
     </div>
@@ -201,10 +203,12 @@ try{ if(!sessionStorage.getItem('introSeen') && !matchMedia('(prefers-reduced-mo
       <details class="other" data-log="other_open" data-label="문화데이터 공모전">
         <summary><span class="o-title">문화데이터 공모전</span><span class="o-sub">2024.07 아이디어 부문, 지역 축제 추천 플랫폼, 3인 팀</span><span class="o-plus" aria-hidden="true"></span></summary>
         <dl><div><dt>배경</dt><dd>해마다 1,170개가 넘는 지역축제가 열리지만 비슷한 프로그램이 반복돼, 방문객이 취향에 맞는 축제를 찾기 어렵다고 봤습니다.</dd></div><div><dt>한 일</dt><dd>취향과 기간을 고르면 축제를 추천하고 주변 놀거리와 맛집까지 이어 주는 흐름을 잡았습니다. 축제 검색량 데이터를 형태소 분석해 분류하고, 블로그 제목을 크롤링해 축제별 연관 키워드를 뽑는 방안을 냈습니다.</dd></div><div><dt>과정</dt><dd>블로그 키워드 빈도분석과 워드클라우드, 방문객 수 회귀분석을 진행했고, 축제 유형보다 예산이 방문객 수에 유의한 변수라는 점을 확인했습니다.</dd></div></dl>
+        <figure class="o-fig"><button type="button" class="zoom" aria-label="이미지 크게 보기"><img src="assets/img/other-culture-wordcloud.webp" alt="송도바람축제 블로그 키워드 워드클라우드" loading="lazy"></button><figcaption>송도바람축제를 다룬 블로그 글에서 뽑은 연관 키워드 워드클라우드입니다.</figcaption></figure>
       </details>
       <details class="other" data-log="other_open" data-label="미래도서관 공모전">
         <summary><span class="o-title">미래도서관 공모전</span><span class="o-sub">2024.01~04 국립중앙도서관, 시니어 독서 플랫폼 제안, 팀</span><span class="o-plus" aria-hidden="true"></span></summary>
         <dl><div><dt>배경</dt><dd>고령층 독서율이 낮고, 공공도서관의 시니어 프로그램과 전용 공간도 부족했습니다.</dd></div><div><dt>한 일</dt><dd>시니어가 직접 책과 프로그램을 추천하고 콘텐츠를 만드는 독서 플랫폼 Senior to Senior를 제안했습니다.</dd></div><div><dt>과정</dt><dd>국민 독서실태 조사와 공공도서관 시니어 이용자 연구를 근거로, 가치를 나누고 싶은 시니어와 콘텐츠가 필요한 시니어를 잇는 구조로 설계했습니다.</dd></div></dl>
+        <figure class="o-fig"><button type="button" class="zoom" aria-label="이미지 크게 보기"><img src="assets/img/other-library-sketch.webp" alt="S2S 앱 화면 손 스케치" loading="lazy"></button><figcaption>팀 회의에서 그린 S2S 앱 화면 스케치입니다. 홈, 인기 도서 목록, 상세 화면으로 이어지는 흐름입니다.</figcaption></figure>
       </details>
       <details class="other" data-log="other_open" data-label="한국산업단지공단 공공데이터 공모전">
         <summary><span class="o-title">한국산업단지공단 공공데이터 공모전</span><span class="o-sub">산업단지 안전사고 예측 알림 서비스 제리미, 팀</span><span class="o-plus" aria-hidden="true"></span></summary>
@@ -213,6 +217,7 @@ try{ if(!sessionStorage.getItem('introSeen') && !matchMedia('(prefers-reduced-mo
       <details class="other" data-log="other_open" data-label="DATA 111, Your-K">
         <summary><span class="o-title">DATA 111, Your-K</span><span class="o-sub">2023.07 메타버스로 외래관광객 관광 문제 해결, 팀</span><span class="o-plus" aria-hidden="true"></span></summary>
         <dl><div><dt>배경</dt><dd>지자체 관광 메타버스는 접속률이 낮았고, 외래관광객은 여행 전 공공기관 사이트를 거의 쓰지 않았습니다(2019 외래관광조사).</dd></div><div><dt>한 일</dt><dd>외래관광객이 가상 공간에서 한국 지역을 미리 체험하고 추천 경로를 받는 Your-K를 제안했습니다.</dd></div><div><dt>과정</dt><dd>2019 상세 방문지 데이터로 네트워크 분석을 해 전주 추천 경로를 짜고, 카드 데이터로 전주 예상 경비를 계산했습니다.</dd></div></dl>
+        <figure class="o-fig"><button type="button" class="zoom" aria-label="이미지 크게 보기"><img src="assets/img/other-data111-chart.webp" alt="전북 지역 활동 목적 순위 막대 차트" loading="lazy"></button><figcaption>전주 추천의 근거로 만든 전북 지역 활동 목적 순위 차트입니다.</figcaption></figure>
       </details>
       <details class="other" data-log="other_open" data-label="스파이더코어 산학 프로젝트">
         <summary><span class="o-title">스파이더코어 산학 프로젝트</span><span class="o-sub">딥러닝 링크 예측 모델 개선, 산학 스터디</span><span class="o-plus" aria-hidden="true"></span></summary>
