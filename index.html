@@ -12,6 +12,7 @@
 <link rel="preload" href="fonts/Pretendard-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="assets/site.css">
+<script>document.documentElement.classList.add('js')</script>
 <script>
 try{ if(!sessionStorage.getItem('introSeen') && !matchMedia('(prefers-reduced-motion: reduce)').matches){ document.documentElement.classList.add('intro-on'); } }catch(e){ document.documentElement.classList.add('intro-on'); }
 </script>
@@ -43,7 +44,7 @@ try{ if(!sessionStorage.getItem('introSeen') && !matchMedia('(prefers-reduced-mo
 </div>
 </div>
 </div>
-<header class="gnb">
+<header class="gnb on-dark">
   <div class="container">
     <a class="logo" href="#top" data-replay title="오프닝 다시 보기"><b>권나영</b><span>서비스 기획자</span></a>
     <nav aria-label="주요 메뉴">
@@ -55,23 +56,35 @@ try{ if(!sessionStorage.getItem('introSeen') && !matchMedia('(prefers-reduced-mo
   </div>
 </header>
 <main id="top">
-<section class="home-hero" style="padding-bottom:80px">
+<section class="home-hero dark-hero">
   <div class="container">
     <p class="eyebrow">서비스 기획자 권나영의 포트폴리오</p>
-    <h1>데이터에서 발견한 고객 행동을,<br><em>실제로 쓰이는 화면</em>으로 바꿉니다.</h1>
+    <h1><span class="line"><span>데이터에서 발견한 고객 행동을,</span></span><span class="line"><span><em>실제로 쓰이는 화면</em>으로 바꿉니다.</span></span></h1>
+    <div class="hero-stats">
+      <div><b data-count="−31.1%p">−31.1%p</b><span>긴급배송 사용률<small>퀵오더, 출시 직전 2주 대비 출시 한 달 뒤 2주</small></span></div>
+      <div><b data-count="12초">12초</b><span>건당 광고 성과 보고서 작성<small>광고 성과 플랫폼, 기존 20분</small></span></div>
+      <div><b data-count="10분 이내">10분 이내</b><span>필요한 데이터 확인까지<small>AI 코드메이커, 기존 2~3일</small></span></div>
+    </div>
+  </div>
+  <div class="container"><p class="scroll-cue"><i></i>아래로 스크롤하면 소개와 프로젝트가 이어집니다</p></div>
+  <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>발견<b>설문과 구매 데이터</b></span><span>정의<b>46.8%</b></span><span>가설과 검증<b>63.6%에서 85.1%</b></span><span>결정<b>알림 대신 화면</b></span><span>출시<b>1:50에서 0:36</b></span><span>발견<b>설문과 구매 데이터</b></span><span>정의<b>46.8%</b></span><span>가설과 검증<b>63.6% 에서 85.1%</b></span><span>결정<b>알림 대신 화면</b></span><span>출시<b>1:50 에서 0:36</b></span></div></div>
+</section>
+
+<section class="block" style="padding:72px 0 0">
+  <div class="container">
     <div class="guide">
-      <p class="guide-t">처음 오셨다면, 이 순서로 보시면 됩니다.</p>
-      <a class="g-card" href="#about"><span class="n">1</span><b>어떤 기획자인지</b><span>경력, 일하는 방식, 주요 이력을 1분 안에 볼 수 있습니다.</span><span class="go">소개 보기 →</span></a>
-      <a class="g-card" href="#projects"><span class="n">2</span><b>대표 프로젝트 3개</b><span>문제, 결과를 카드에서 먼저 보고, 누르면 전체 과정을 볼 수 있습니다.</span><span class="go">프로젝트 보기 →</span></a>
-      <a class="g-card" href="#contact"><span class="n">3</span><b>연락과 PDF</b><span>메일 주소를 바로 복사하거나, 같은 내용을 PDF로 받을 수 있습니다.</span><span class="go">연락하기 →</span></a>
+      <p class="guide-t" data-reveal>처음 오셨다면, 이 순서로 보시면 됩니다.</p>
+      <a class="g-card" href="#about" data-reveal style="--d:.05s"><span class="n">1</span><b>어떤 기획자인지</b><span>경력, 일하는 방식, 주요 이력을 1분 안에 볼 수 있습니다.</span><span class="go">소개 보기 →</span></a>
+      <a class="g-card" href="#projects" data-reveal style="--d:.15s"><span class="n">2</span><b>대표 프로젝트 3개</b><span>문제, 결과를 카드에서 먼저 보고, 누르면 전체 과정을 볼 수 있습니다.</span><span class="go">프로젝트 보기 →</span></a>
+      <a class="g-card" href="#contact" data-reveal style="--d:.25s"><span class="n">3</span><b>연락과 PDF</b><span>메일 주소를 바로 복사하거나, 같은 내용을 PDF로 받을 수 있습니다.</span><span class="go">연락하기 →</span></a>
     </div>
   </div>
 </section>
 
 <section class="block" id="about" data-view="소개" style="padding-top:40px">
   <div class="container">
-    <div class="s-head"><h2>소개</h2><p>어떤 회사에서 어떤 일을 했는지 먼저 정리했습니다.</p></div>
-    <div class="intro-grid">
+    <div class="s-head" data-reveal><h2>소개</h2><p>어떤 회사에서 어떤 일을 했는지 먼저 정리했습니다.</p></div>
+    <div class="intro-grid" data-reveal>
       <p class="lead-xl">분석으로 끝내지 않고, 문제를 정의하고 가설을 검증한 뒤 배포까지 직접 끌고 갔습니다.</p>
       <div>
         <p>더편한샵은 약국과 병의원이 의약품을 온라인으로 주문하는 B2B 이커머스입니다. 회원은 개인 소비자가 아니라 약국과 병의원이고, 같은 상품을 정기적으로 다시 주문하는 경우가 많습니다.</p>
@@ -84,26 +97,26 @@ try{ if(!sessionStorage.getItem('introSeen') && !matchMedia('(prefers-reduced-mo
         </ul>
       </div>
     </div>
-    <dl class="facts">
+    <dl class="facts" data-reveal>
       <div><dt>경력</dt><dd>더편한샵, 이지메디컴 커머스기획<br>2025.01 ~ 2026.07 (1년 6개월)</dd></div>
       <div><dt>학력</dt><dd>숙명여자대학교 경영학부<br>소프트웨어융합전공 복수전공</dd></div>
       <div><dt>수상</dt><dd>한국상품학회 최우수 논문상<br>교내 데이터 시각화 공모전 우수상</dd></div>
       <div><dt>자격</dt><dd>TOEIC Speaking AL<br>ADsP, 컴퓨터활용능력 2급</dd></div>
     </dl>
     <p class="sub-h">일하는 방식, 퀵오더 한 건으로 보면</p>
-    <ol class="steps5" style="margin-top:0"><li><small>1</small><b>발견</b><span>'주문 누락' 긴급배송 이용 사유 설문 결과</span></li><li><small>2</small><b>정의</b><span>46.8% 같은 상품을 10회 이상 사는 회원 비중</span></li><li><small>3</small><b>가설과 검증</b><span>63.6%에서 85.1% 알림 정확도 기준 70% 달성</span></li><li><small>4</small><b>결정</b><span>알림 대신 화면 약국 5곳 인터뷰 후 재고 정보 화면 표시</span></li><li><small>5</small><b>출시</b><span>1분 50초에서 36초 테스트 회원 20명의 주문 시간</span></li></ol>
+    <ol class="steps5" style="margin-top:0" data-reveal><li><small>1</small><b>발견</b><span>'주문 누락' 긴급배송 이용 사유 설문 결과</span></li><li><small>2</small><b>정의</b><span>46.8% 같은 상품을 10회 이상 사는 회원 비중</span></li><li><small>3</small><b>가설과 검증</b><span>63.6%에서 85.1% 알림 정확도 기준 70% 달성</span></li><li><small>4</small><b>결정</b><span>알림 대신 화면 약국 5곳 인터뷰 후 재고 정보 화면 표시</span></li><li><small>5</small><b>출시</b><span>1분 50초에서 36초 테스트 회원 20명의 주문 시간</span></li></ol>
     <a class="pill" href="about.html">이력 전체 보기 <span class="arr">→</span></a>
   </div>
 </section>
 
 <section class="block" id="projects" data-view="프로젝트 목록" style="padding-top:40px">
   <div class="container">
-    <div class="s-head"><h2>대표 프로젝트<sup>3</sup></h2><p>카드를 누르면 문제 발견부터 출시까지 전체 과정을 볼 수 있습니다. 세 개를 모두 읽는 데 약 9분 걸립니다.</p></div>
+    <div class="s-head" data-reveal><h2>대표 프로젝트</h2><p>카드를 누르면 문제 발견부터 출시까지 전체 과정을 볼 수 있습니다. 세 개를 모두 읽는 데 약 9분 걸립니다.</p></div>
     <div class="works">
-    <a class="work" href="projects/quick-order.html" data-log="project_open" data-label="퀵오더">
+    <a class="work" href="projects/quick-order.html" data-log="project_open" data-label="퀵오더" data-reveal style="--d:0.00s">
       <div class="work-thumb t-green"><img src="assets/img/qo-screen.webp" alt="퀵오더 화면" loading="lazy"></div>
       <div class="work-meta">
-        <span class="work-cat">B2B 커머스, 주문 기능 기획</span><span class="work-year">2025.04 ~ 2026.02</span>
+        <div class="top-row"><span class="work-cat">B2B 커머스, 주문 기능 기획</span><span class="work-year">2025.04 ~ 2026.02</span></div>
         <h3 class="work-title">퀵오더</h3>
         <dl class="work-sum">
           <div><dt>문제</dt><dd>일반배송보다 물류비가 3배 드는 긴급배송을 줄여야 했습니다. 원인은 자주 사는 상품을 매번 다시 찾다 빠뜨리는 주문 누락이었습니다.</dd></div>
@@ -112,10 +125,10 @@ try{ if(!sessionStorage.getItem('introSeen') && !matchMedia('(prefers-reduced-mo
         <div class="work-foot"><span class="work-more">자세히 보기 →</span><span class="work-time">읽는 시간 약 4분</span></div>
       </div>
     </a>
-    <a class="work" href="projects/ad-platform.html" data-log="project_open" data-label="광고 성과 플랫폼">
+    <a class="work" href="projects/ad-platform.html" data-log="project_open" data-label="광고 성과 플랫폼" data-reveal style="--d:0.12s">
       <div class="work-thumb t-slate"><img src="assets/img/ad-dashboard.webp" alt="광고 성과 플랫폼 화면" loading="lazy"></div>
       <div class="work-meta">
-        <span class="work-cat">B2B 플랫폼, 광고주 셀프서비스</span><span class="work-year">2025.10 ~ 2026.04</span>
+        <div class="top-row"><span class="work-cat">B2B 플랫폼, 광고주 셀프서비스</span><span class="work-year">2025.10 ~ 2026.04</span></div>
         <h3 class="work-title">광고 성과 플랫폼</h3>
         <dl class="work-sum">
           <div><dt>문제</dt><dd>셀러툴에 광고 성과를 분석할 도구가 없어, Spotfire 수기 보고서로 대응하고 있었습니다.</dd></div>
@@ -124,10 +137,10 @@ try{ if(!sessionStorage.getItem('introSeen') && !matchMedia('(prefers-reduced-mo
         <div class="work-foot"><span class="work-more">자세히 보기 →</span><span class="work-time">읽는 시간 약 3분</span></div>
       </div>
     </a>
-    <a class="work" href="projects/code-maker.html" data-log="project_open" data-label="AI 코드메이커">
+    <a class="work" href="projects/code-maker.html" data-log="project_open" data-label="AI 코드메이커" data-reveal style="--d:0.24s">
       <div class="work-thumb t-mint"><img src="assets/img/bot-order-num.webp" alt="AI 코드메이커 화면" loading="lazy"></div>
       <div class="work-meta">
-        <span class="work-cat">업무 자동화, 생성형 AI 활용</span><span class="work-year">2026.01</span>
+        <div class="top-row"><span class="work-cat">업무 자동화, 생성형 AI 활용</span><span class="work-year">2026.01</span></div>
         <h3 class="work-title">AI 코드메이커</h3>
         <dl class="work-sum">
           <div><dt>문제</dt><dd>Spotfire 기본 기능으로 풀리지 않는 전처리가 반복됐고, 파이썬을 모르면 분석이 멈췄습니다.</dd></div>
@@ -142,23 +155,23 @@ try{ if(!sessionStorage.getItem('introSeen') && !matchMedia('(prefers-reduced-mo
 
 <section class="block" id="others" data-view="추가 경험" style="padding-top:0">
   <div class="container">
-    <div class="s-head"><h2>그 밖의 프로젝트<sup>4</sup></h2><p>대표 프로젝트보다 범위가 작거나, 검증 단계에서 멈춘 과제입니다.</p></div>
+    <div class="s-head" data-reveal><h2>그 밖의 프로젝트</h2><p>대표 프로젝트보다 범위가 작거나, 검증 단계에서 멈춘 과제입니다.</p></div>
     <p class="hint">제목을 누르면 배경, 한 일, 과정이 펼쳐집니다.</p>
-    <div class="others">
+    <div class="others" data-reveal>
     <details class="other" data-log="other_open" data-label="이탈처 예측 분석">
-      <summary><span class="o-no">01</span><span class="o-title">이탈처 예측 분석</span><span class="o-sub">더샵 회원 이탈 조기 경고</span><span class="o-plus" aria-hidden="true"></span></summary>
+      <summary><span class="o-title">이탈처 예측 분석</span><span class="o-sub">더샵 회원 이탈 조기 경고</span><span class="o-plus" aria-hidden="true"></span></summary>
       <dl><div><dt>배경</dt><dd>2025년 3월 유통 이슈로 약사 채널의 이탈 우려가 커졌습니다.</dd></div><div><dt>한 일</dt><dd>회원 그룹별 로그인 주기와 주문 주기 기준선을 도출하고, 이탈 점수(0~1) 매트릭스로 위험 수준을 나눴습니다.</dd></div><div><dt>과정</dt><dd>1차 단순 통계 로직을 영업부에 일간 공유하다 첫 주문 후 재주문 없는 케이스에서 한계를 발견해 2차 기준을 다시 설계했습니다.</dd></div></dl>
     </details>
     <details class="other" data-log="other_open" data-label="SLA 평가 대시보드">
-      <summary><span class="o-no">02</span><span class="o-title">SLA 평가 대시보드</span><span class="o-sub">더샵플러스 유통 품질 관리, Looker</span><span class="o-plus" aria-hidden="true"></span></summary>
+      <summary><span class="o-title">SLA 평가 대시보드</span><span class="o-sub">더샵플러스 유통 품질 관리, Looker</span><span class="o-plus" aria-hidden="true"></span></summary>
       <dl><div><dt>배경</dt><dd>구색, 최저가, 반품, 품절약을 관리할 공통 기준이 없어 데이터 재조회와 책임 소재 문제가 반복됐습니다.</dd></div><div><dt>한 일</dt><dd>SLA 지표 4가지를 정의하고, n8n으로 매일 오전 7시 구글시트를 갱신해 Looker로 시각화하는 구조를 만들었습니다.</dd></div><div><dt>과정</dt><dd>자동 갱신 시 수식이 깨지는 문제를 '가공용' 탭을 따로 두어 해결했습니다.</dd></div></dl>
     </details>
     <details class="other" data-log="other_open" data-label="입고요청 대시보드">
-      <summary><span class="o-no">03</span><span class="o-title">입고요청 대시보드</span><span class="o-sub">품절 상품 입고요청과 공급사 응답율</span><span class="o-plus" aria-hidden="true"></span></summary>
+      <summary><span class="o-title">입고요청 대시보드</span><span class="o-sub">품절 상품 입고요청과 공급사 응답율</span><span class="o-plus" aria-hidden="true"></span></summary>
       <dl><div><dt>배경</dt><dd>의약품 수급 불안 속에서 회원의 입고요청에 공급사가 얼마나 응답하는지 볼 수 없었습니다.</dd></div><div><dt>한 일</dt><dd>약사, 공급사, 더샵 각각의 이득을 기준으로 입고요청 순위, 공급사 응답 소요시간 대시보드를 기획했습니다.</dd></div><div><dt>과정</dt><dd>개발팀과 SQL 조회조건과 채널별 데이터 조인 구조를 정의하고, 대시보드별 매뉴얼을 만들었습니다.</dd></div></dl>
     </details>
     <details class="other" data-log="other_open" data-label="냉장의약품 RFID 재고관리">
-      <summary><span class="o-no">04</span><span class="o-title">냉장의약품 RFID 재고관리</span><span class="o-sub">병원몰 재고관리 자동화 검토</span><span class="o-plus" aria-hidden="true"></span></summary>
+      <summary><span class="o-title">냉장의약품 RFID 재고관리</span><span class="o-sub">병원몰 재고관리 자동화 검토</span><span class="o-plus" aria-hidden="true"></span></summary>
       <dl><div><dt>배경</dt><dd>병원몰에서 냉장의약품 비중이 컸지만, 병의원 재고관리는 수기 중심이었습니다.</dd></div><div><dt>한 일</dt><dd>진료과별 사용량을 분석하고, 수수료 수익과 태그비, 리더기 비용을 비교한 BEP 분석으로 리더기 무상 제공 대상 기준을 설계했습니다.</dd></div><div><dt>복기</dt><dd>확보 가능한 제품이 대부분 상온 제품이라 목적에 맞는 실험군을 구하기 어려웠다는 구조적 한계를 확인했습니다.</dd></div></dl>
     </details>
     </div>

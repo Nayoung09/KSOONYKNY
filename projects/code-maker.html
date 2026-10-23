@@ -12,6 +12,7 @@
 <link rel="preload" href="../fonts/Pretendard-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="../assets/site.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body class="page-new" data-page="프로젝트: AI 코드메이커">
 <div class="reading-bar" aria-hidden="true"><i></i></div>
@@ -36,7 +37,7 @@
     <p class="p-sub">분석이 멈추던 전처리를, 팀이 함께 쓰는 AI 봇으로</p>
     <p class="read-meta">읽는 데 약 <b>2분</b> 걸립니다. 바쁘시면 아래 <b>한눈에 보기</b>만 보셔도 됩니다.</p>
     <p class="glance-t">한눈에 보기</p>
-    <div class="glance3">
+    <div class="glance3" data-reveal>
       <div><h2>문제</h2><p>Spotfire 기본 기능으로 풀리지 않는 전처리가 반복됐고, 파이썬을 모르면 분석이 멈췄습니다.</p></div>
       <div><h2>한 일</h2><p>컬럼명과 목적만 넣으면 실행 코드와 매뉴얼이 나오는 커스텀 봇을 만들고 팀에 배포했습니다.</p></div>
       <div class="is-res"><h2>결과</h2><p>필요한 데이터를 확인하기까지 2~3일에서 10분 이내, 오류율 30% 감소 (초기 테스트 대비)</p></div>
@@ -76,9 +77,9 @@
       </div>
     </div>
     <div class="brief-row"><h2>한 줄 요약</h2><p>퀵오더 로그를 분석하다 막힌 지점을, 파이썬을 몰라도 쓸 수 있는 도구로 만들었습니다.</p></div>
-    <div class="p-result">
-    <div><span class="k">결과</span><div class="v"><s>2~3일</s><b>10분 이내</b></div><p class="d">필요한 데이터를 확인하기까지 걸린 시간<br/>개발팀 요청 대비</p></div>
-    <div><span class="k">결과</span><div class="v"><b>30%</b></div><p class="d">오류율 감소 (초기 테스트 대비)</p></div>
+    <div class="p-result" data-reveal>
+    <div><span class="k">결과</span><div class="v"><s>2~3일</s><b data-count="10분 이내">10분 이내</b></div><p class="d">필요한 데이터를 확인하기까지 걸린 시간<br/>개발팀 요청 대비</p></div>
+    <div><span class="k">결과</span><div class="v"><b data-count="30%">30%</b></div><p class="d">오류율 감소 (초기 테스트 대비)</p></div>
     </div>
   </div>
 </section>
@@ -90,7 +91,7 @@
 <section class="chapter" id="code-maker-01" data-view="AI 코드메이커 01 발견">
   <div class="container chapter-grid">
     <div class="ch-label"><span class="no">01</span><span class="nm">발견</span></div>
-    <div class="ch-body">
+    <div class="ch-body" data-reveal>
       <h2>퀵오더 사용 흐름을 보려는데, 로그가 한 칸에 붙어 있었습니다</h2>
       <p>퀵오더 사용 로그는 Grafana로 실시간 확인만 가능했습니다. 저장된 데이터에는 모달 열기, 리스트 담기, 주문 클릭 이력이 한 셀에 붙어 있어 사용 흐름을 해석할 수 없었습니다.</p>
 <p>VC 주문 데이터의 주문번호도 여러 건이 한 값으로 붙어 나오는 등, 비슷한 문제가 다른 분석에서도 반복됐습니다.</p>
@@ -104,7 +105,7 @@
 <section class="chapter" id="code-maker-02" data-view="AI 코드메이커 02 정의">
   <div class="container chapter-grid">
     <div class="ch-label"><span class="no">02</span><span class="nm">정의</span></div>
-    <div class="ch-body">
+    <div class="ch-body" data-reveal>
       <h2>개인의 실력 문제가 아니라, 팀의 반복 비용으로 봤습니다</h2>
       <p>Spotfire 내장 기능으로 처리되지 않는 전처리마다 파이썬이 필요했습니다. 팀원 대부분이 파이썬에 익숙하지 않아 매번 개발팀에 데이터를 요청했고, 개발팀 공수에 따라 데이터를 확인하기까지 2~3일이 걸렸습니다.</p>
 <p>개발팀 의존으로 생기는 병목을 줄이고, 팀원이 원하는 데이터를 직접 확보해 의사결정 시간을 줄이는 것을 목적으로 정했습니다.</p>
@@ -114,7 +115,7 @@
 <section class="chapter" id="code-maker-03" data-view="AI 코드메이커 03 가설과 검증">
   <div class="container chapter-grid">
     <div class="ch-label"><span class="no">03</span><span class="nm">가설과 검증</span></div>
-    <div class="ch-body">
+    <div class="ch-body" data-reveal>
       <h2>요구사항을 넣으면 실행 코드가 나오는 봇을 만들었습니다</h2>
       <p>데이터 컬럼명과 분석 목적을 입력하면, Spotfire에 바로 적용할 수 있는 파이썬 코드와 변수별 상세 매뉴얼이 함께 나오도록 ChatGPT 커스텀 봇을 학습시켰습니다.</p>
 <div class="figure">
@@ -131,7 +132,7 @@
 <section class="chapter" id="code-maker-04" data-view="AI 코드메이커 04 결정">
   <div class="container chapter-grid">
     <div class="ch-label"><span class="no">04</span><span class="nm">결정</span></div>
-    <div class="ch-body">
+    <div class="ch-body" data-reveal>
       <h2>코드만 주지 않고, 매뉴얼을 함께 주기로 했습니다</h2>
       <div class="decision">
 <span class="d-k">직접 내린 결정</span>
@@ -146,7 +147,7 @@
 <section class="chapter" id="code-maker-05" data-view="AI 코드메이커 05 출시">
   <div class="container chapter-grid">
     <div class="ch-label"><span class="no">05</span><span class="nm">출시</span></div>
-    <div class="ch-body">
+    <div class="ch-body" data-reveal>
       <h2>퀵오더 사용성 분석에 바로 썼습니다</h2>
       <div class="figure">
 <div class="ba">
