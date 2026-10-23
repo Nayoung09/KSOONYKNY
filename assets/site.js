@@ -98,3 +98,10 @@ var LOG_URL = 'https://script.google.com/macros/s/AKfycbzwsMRWniML65jmMjBWT5RRBc
   var logo=document.querySelector('.logo[data-replay]');
   if(logo) logo.addEventListener('click',function(e){ e.preventDefault(); pfLog('intro_replay','로고'); play(); });
 })();
+
+/* ===== 상세 페이지 목차 현재 위치 ===== */
+(function(){
+  var links=document.querySelectorAll('.ch-nav a'); if(!links.length||!('IntersectionObserver' in window)) return;
+  var io=new IntersectionObserver(function(en){ en.forEach(function(x){ if(x.isIntersecting){ links.forEach(function(a){ a.classList.toggle('on', a.getAttribute('href')==='#'+x.target.id); }); } }); },{rootMargin:'-40% 0px -55% 0px'});
+  links.forEach(function(a){ var el=document.querySelector(a.getAttribute('href')); if(el) io.observe(el); });
+})();

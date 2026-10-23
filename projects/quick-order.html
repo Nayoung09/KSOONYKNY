@@ -19,10 +19,10 @@
   <div class="container">
     <a class="logo" href="../index.html"><b>권나영</b><span>서비스 기획자</span></a>
     <nav aria-label="주요 메뉴">
-      <a href="../index.html#projects" aria-current="page">Projects</a>
-      <a href="../about.html">About</a>
-      <a href="#contact">Contact</a>
-      <a class="nav-pdf" href="../assets/kwon-nayoung-portfolio.pdf" download="권나영_서비스기획_포트폴리오.pdf" data-log="pdf_download" data-label="상단 메뉴">PDF</a>
+      <a href="../about.html">소개</a>
+      <a href="../index.html#projects" aria-current="page">프로젝트</a>
+      <a href="#contact">연락</a>
+      <a class="nav-pdf" href="../assets/kwon-nayoung-portfolio.pdf" download="권나영_서비스기획_포트폴리오.pdf" data-log="pdf_download" data-label="상단 메뉴">PDF 받기</a>
     </nav>
   </div>
 </header>
@@ -30,9 +30,17 @@
 <main id="top">
 <section class="p-hero">
   <div class="container">
+    <p class="crumb"><a href="../index.html">홈</a><span>/</span><a href="../index.html#projects">대표 프로젝트</a><span>/</span>퀵오더</p>
     <p class="p-cat">B2B 커머스, 주문 기능 기획</p>
     <h1>퀵오더</h1>
     <p class="p-sub">긴급배송의 이유를 묻는 데서 시작한 퀵오더</p>
+    <p class="read-meta">읽는 데 약 <b>4분</b> 걸립니다. 바쁘시면 아래 <b>한눈에 보기</b>만 보셔도 됩니다.</p>
+    <p class="glance-t">한눈에 보기</p>
+    <div class="glance3">
+      <div><h2>문제</h2><p>일반배송보다 물류비가 3배 드는 긴급배송을 줄여야 했습니다. 원인은 자주 사는 상품을 매번 다시 찾다 빠뜨리는 주문 누락이었습니다.</p></div>
+      <div><h2>한 일</h2><p>구매 루틴 기반 추천 리스트와 다시 구매하기 위젯을 기획하고 3차까지 배포했습니다.</p></div>
+      <div class="is-res"><h2>결과</h2><p>주문 시간 1분 50초에서 36초 (테스트 회원 20명), 긴급배송 사용률 31.1%p 감소 (출시 직전 2주 대비 출시 한 달 뒤 2주)</p></div>
+    </div>
     <dl class="p-info">
       <div class=""><dt>회사</dt><dd>더편한샵</dd></div>
       <div class=""><dt>분류</dt><dd>B2B 커머스, 주문 기능 기획</dd></div>
@@ -48,18 +56,38 @@
 <div class="kv t-green">
   <img src="../assets/img/qo-screen.webp" alt="퀵오더 대표 화면" loading="eager">
 </div>
+<p class="kv-cap">실제 배포된 퀵오더 화면. 자주 사는 상품을 한 화면에서 다시 담고 바로 결제합니다.</p>
 
 <section class="brief" data-view="퀵오더 개요">
   <div class="container">
-    <div class="brief-row"><h2>Brief</h2><p>일반배송보다 물류비가 3배 드는 긴급배송을 줄여야 했습니다. 원인은 자주 사는 상품을 매번 다시 찾다 빠뜨리는 주문 누락이었습니다.</p></div>
-    <div class="brief-row"><h2>Concept</h2><p>구매 루틴 기반 추천 리스트와 다시 구매하기 위젯을 기획하고 3차까지 배포했습니다.</p></div>
-    <div class="brief-row"><h2>Summary</h2><p>반복 구매 약국의 주문 누락을 줄이기 위해, 세 번의 배포를 거쳐 <span class="nw">주문 화면을 바꿨습니다.</span></p></div>
+    <div class="context">
+      <h2>배경 설명</h2>
+      <div>
+        <p>더편한샵은 약국과 병의원이 의약품을 온라인으로 주문하는 B2B 이커머스입니다. 회원은 개인 소비자가 아니라 약국과 병의원이고, 같은 상품을 정기적으로 다시 주문하는 경우가 많습니다.</p>
+        <details class="terms" data-log="terms_open" data-label="퀵오더 용어 설명">
+          <summary>이 프로젝트에 나오는 용어 설명</summary>
+          <dl>
+          <div><dt>긴급배송</dt><dd>일반배송보다 물류비가 3배 드는 배송 방식입니다. 회사는 이 사용률을 줄여야 했습니다.</dd></div>
+          <div><dt>ETC 상품</dt><dd>전문의약품. 의사 처방이 있어야 하는 의약품으로, 약국이 정기적으로 같은 상품을 다시 주문합니다.</dd></div>
+          <div><dt>MVP</dt><dd>핵심 기능만 먼저 만들어 배포한 최소 기능 버전입니다. 반응을 보고 다음 배포에서 고쳤습니다.</dd></div>
+          <div><dt>프리토타입</dt><dd>기능을 만들기 전에 버튼만 먼저 두고, 실제로 누르는지 보며 수요를 확인하는 방법입니다.</dd></div>
+          <div><dt>NPS</dt><dd>추천 의향 점수입니다. 추천하겠다는 비율에서 추천하지 않겠다는 비율을 뺀 값입니다.</dd></div>
+          <div><dt>Clarity, Grafana</dt><dd>Clarity는 사용자 화면을 녹화해 행동을 보는 도구, Grafana는 서비스 로그를 실시간으로 보는 도구입니다.</dd></div>
+          </dl>
+        </details>
+      </div>
+    </div>
+    <div class="brief-row"><h2>한 줄 요약</h2><p>반복 구매 약국의 주문 누락을 줄이기 위해, 세 번의 배포를 거쳐 <span class="nw">주문 화면을 바꿨습니다.</span></p></div>
     <div class="p-result">
     <div><span class="k">결과</span><div class="v"><s>1분 50초</s><b>36초</b></div><p class="d">주문 탐색부터 결제 완료까지 걸린 시간<br/>테스트 회원 20명, 도입 전후 평균</p></div>
     <div><span class="k">결과</span><div class="v"><b>31.1%p</b></div><p class="d">긴급배송 사용률 감소<br/>출시 직전 2주 대비 출시 한 달 뒤 2주</p></div>
     </div>
   </div>
 </section>
+
+<nav class="ch-nav" aria-label="이 프로젝트의 단계">
+  <div class="container"><span class="lbl">진행 순서</span><a href="#quick-order-01">1 발견</a><a href="#quick-order-02">2 정의</a><a href="#quick-order-03">3 가설과 검증</a><a href="#quick-order-04">4 결정</a><a href="#quick-order-05">5 출시</a></div>
+</nav>
 
 <section class="chapter" id="quick-order-01" data-view="퀵오더 01 발견">
   <div class="container chapter-grid">
@@ -200,28 +228,28 @@
 
 <nav class="pager" aria-label="다른 프로젝트">
   <div class="container">
-    <a class="back" href="../index.html#projects">← 목록으로</a>
+    <a class="back" href="../index.html#projects">← 프로젝트 목록으로</a>
     <a class="next" href="ad-platform.html" data-log="project_open" data-label="다음 프로젝트: 광고 성과 플랫폼">
-      <small>Next Project</small><b>광고 성과 플랫폼</b><span>B2B 플랫폼, 광고주 셀프서비스</span>
+      <small>다음 프로젝트</small><b>광고 성과 플랫폼</b><span>B2B 플랫폼, 광고주 셀프서비스</span>
     </a>
   </div>
 </nav>
 </main>
 <section class="contact-band" id="contact" data-view="연락">
   <div class="container">
-    <p class="eyebrow">Contact</p>
+    <p class="eyebrow">연락</p>
     <h2>데이터에서 문제를 찾고, 화면으로 끝내는 기획을 함께하고 싶습니다.</h2>
-    <p>포지션이나 프로젝트에 관해 편하게 연락해 주세요. 주소를 누르면 복사됩니다.</p>
+    <p>포지션이나 프로젝트에 관해 편하게 연락해 주세요. 아래 주소를 누르면 메일 주소가 복사됩니다.</p>
     <button class="contact-mail" type="button" data-mail="ksoonykny@naver.com" data-log="email_copy" data-label="메일 주소">ksoonykny@naver.com</button>
     <div class="pills">
-      <button class="pill light solid" type="button" data-mail="ksoonykny@naver.com" data-log="email_copy" data-label="이메일 버튼">이메일 복사하기</button>
-      <a class="pill light" href="../assets/kwon-nayoung-portfolio.pdf" download="권나영_서비스기획_포트폴리오.pdf" data-log="pdf_download" data-label="연락 영역">PDF 다운로드 <span class="arr">↓</span></a>
+      <button class="pill light solid" type="button" data-mail="ksoonykny@naver.com" data-log="email_copy" data-label="이메일 버튼">메일 주소 복사</button>
+      <a class="pill light" href="../assets/kwon-nayoung-portfolio.pdf" download="권나영_서비스기획_포트폴리오.pdf" data-log="pdf_download" data-label="연락 영역">PDF 포트폴리오 받기 <span class="arr">↓</span></a>
     </div>
   </div>
 </section>
 <footer class="site-foot">
   <div class="container">
-    <span>© 2026 권나영. Service Planner Portfolio</span>
+    <span>© 2026 권나영 서비스 기획 포트폴리오</span>
     <a href="#top">맨 위로</a>
   </div>
 </footer>

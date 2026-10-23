@@ -47,49 +47,81 @@ try{ if(!sessionStorage.getItem('introSeen') && !matchMedia('(prefers-reduced-mo
   <div class="container">
     <a class="logo" href="#top" data-replay title="오프닝 다시 보기"><b>권나영</b><span>서비스 기획자</span></a>
     <nav aria-label="주요 메뉴">
-      <a href="index.html#projects">Projects</a>
-      <a href="about.html">About</a>
-      <a href="#contact">Contact</a>
-      <a class="nav-pdf" href="assets/kwon-nayoung-portfolio.pdf" download="권나영_서비스기획_포트폴리오.pdf" data-log="pdf_download" data-label="상단 메뉴">PDF</a>
+      <a href="about.html">소개</a>
+      <a href="index.html#projects">프로젝트</a>
+      <a href="#contact">연락</a>
+      <a class="nav-pdf" href="assets/kwon-nayoung-portfolio.pdf" download="권나영_서비스기획_포트폴리오.pdf" data-log="pdf_download" data-label="상단 메뉴">PDF 받기</a>
     </nav>
   </div>
 </header>
 <main id="top">
-<section class="home-hero">
+<section class="home-hero" style="padding-bottom:80px">
   <div class="container">
-    <p class="eyebrow">Service Planner Portfolio 2026</p>
+    <p class="eyebrow">서비스 기획자 권나영의 포트폴리오</p>
     <h1>데이터에서 발견한 고객 행동을,<br><em>실제로 쓰이는 화면</em>으로 바꿉니다.</h1>
-    <div class="hero-foot">
-      <p>헬스케어 커머스 더편한샵에서 1년 6개월 동안 약국과 병의원 회원을 위한 기능과 데이터 도구를 기획했습니다. 분석에서 멈추지 않고 배포까지 <span class="nw">직접 끌고 갔습니다.</span></p>
-      <dl class="hero-facts">
-        <div><dt>경력</dt><dd>1년 6개월</dd></div>
-        <div><dt>대표 프로젝트</dt><dd>3건</dd></div>
-        <div><dt>담당</dt><dd>기획부터 배포, 검증</dd></div>
-      </dl>
+    <div class="guide">
+      <p class="guide-t">처음 오셨다면, 이 순서로 보시면 됩니다.</p>
+      <a class="g-card" href="#about"><span class="n">1</span><b>어떤 기획자인지</b><span>경력, 일하는 방식, 주요 이력을 1분 안에 볼 수 있습니다.</span><span class="go">소개 보기 →</span></a>
+      <a class="g-card" href="#projects"><span class="n">2</span><b>대표 프로젝트 3개</b><span>문제, 결과를 카드에서 먼저 보고, 누르면 전체 과정을 볼 수 있습니다.</span><span class="go">프로젝트 보기 →</span></a>
+      <a class="g-card" href="#contact"><span class="n">3</span><b>연락과 PDF</b><span>메일 주소를 바로 복사하거나, 같은 내용을 PDF로 받을 수 있습니다.</span><span class="go">연락하기 →</span></a>
     </div>
+  </div>
+</section>
+
+<section class="block" id="about" data-view="소개" style="padding-top:40px">
+  <div class="container">
+    <div class="s-head"><h2>소개</h2><p>어떤 회사에서 어떤 일을 했는지 먼저 정리했습니다.</p></div>
+    <div class="intro-grid">
+      <p class="lead-xl">분석으로 끝내지 않고, 문제를 정의하고 가설을 검증한 뒤 배포까지 직접 끌고 갔습니다.</p>
+      <div>
+        <p>더편한샵은 약국과 병의원이 의약품을 온라인으로 주문하는 B2B 이커머스입니다. 회원은 개인 소비자가 아니라 약국과 병의원이고, 같은 상품을 정기적으로 다시 주문하는 경우가 많습니다.</p>
+        <p>이곳에서 1년 6개월 동안 서비스 기획자로 일하며, 약국과 병의원 회원을 위한 주문 기능과 광고주용 플랫폼, 팀이 쓰는 데이터 도구를 기획했습니다.</p>
+        <ul class="did">
+          <li><b>문제 발견</b><span>설문, 구매 데이터, 사용 로그에서 반복되는 고객 행동을 찾았습니다.</span></li>
+          <li><b>가설과 검증</b><span>기준을 먼저 정하고 작게 테스트했습니다. 데이터로 안 보이는 이유는 현장을 찾아가 들었습니다.</span></li>
+          <li><b>화면과 정책</b><span>정책서와 화면기능서를 직접 쓰고, 개발팀, 디자인팀과 조율해 배포했습니다.</span></li>
+          <li><b>배포 후 측정</b><span>TC 작성과 QA를 거쳐 배포하고, 배포 뒤 지표를 다시 확인해 다음 개선을 정했습니다.</span></li>
+        </ul>
+      </div>
+    </div>
+    <dl class="facts">
+      <div><dt>경력</dt><dd>더편한샵, 이지메디컴 커머스기획<br>2025.01 ~ 2026.07 (1년 6개월)</dd></div>
+      <div><dt>학력</dt><dd>숙명여자대학교 경영학부<br>소프트웨어융합전공 복수전공</dd></div>
+      <div><dt>수상</dt><dd>한국상품학회 최우수 논문상<br>교내 데이터 시각화 공모전 우수상</dd></div>
+      <div><dt>자격</dt><dd>TOEIC Speaking AL<br>ADsP, 컴퓨터활용능력 2급</dd></div>
+    </dl>
+    <p class="sub-h">일하는 방식, 퀵오더 한 건으로 보면</p>
+    <ol class="steps5" style="margin-top:0"><li><small>1</small><b>발견</b><span>'주문 누락' 긴급배송 이용 사유 설문 결과</span></li><li><small>2</small><b>정의</b><span>46.8% 같은 상품을 10회 이상 사는 회원 비중</span></li><li><small>3</small><b>가설과 검증</b><span>63.6%에서 85.1% 알림 정확도 기준 70% 달성</span></li><li><small>4</small><b>결정</b><span>알림 대신 화면 약국 5곳 인터뷰 후 재고 정보 화면 표시</span></li><li><small>5</small><b>출시</b><span>1분 50초에서 36초 테스트 회원 20명의 주문 시간</span></li></ol>
+    <a class="pill" href="about.html">이력 전체 보기 <span class="arr">→</span></a>
   </div>
 </section>
 
 <section class="block" id="projects" data-view="프로젝트 목록" style="padding-top:40px">
   <div class="container">
-    <div class="s-head"><h2>Projects<sup>03</sup></h2><p>모두 발견, 정의, 가설과 검증, 결정, 출시 순서로 정리했습니다.</p></div>
+    <div class="s-head"><h2>대표 프로젝트<sup>3</sup></h2><p>카드를 누르면 문제 발견부터 출시까지 전체 과정을 볼 수 있습니다. 세 개를 모두 읽는 데 약 9분 걸립니다.</p></div>
     <div class="works">
     <a class="work" href="projects/quick-order.html" data-log="project_open" data-label="퀵오더">
       <div class="work-thumb t-green"><img src="assets/img/qo-screen.webp" alt="퀵오더 화면" loading="lazy"></div>
       <div class="work-meta">
-        <span class="work-cat">B2B 커머스, 주문 기능 기획</span><span class="work-year">2025.04 — 2026.02</span>
+        <span class="work-cat">B2B 커머스, 주문 기능 기획</span><span class="work-year">2025.04 ~ 2026.02</span>
         <h3 class="work-title">퀵오더</h3>
-        <p class="work-sub">반복 구매 약국의 주문 누락을 줄인 주문 화면</p>
-        <div class="work-num"><span><b>−31.1%p</b>긴급배송 사용률</span><span><b>36초</b>주문 소요 시간</span></div>
+        <dl class="work-sum">
+          <div><dt>문제</dt><dd>일반배송보다 물류비가 3배 드는 긴급배송을 줄여야 했습니다. 원인은 자주 사는 상품을 매번 다시 찾다 빠뜨리는 주문 누락이었습니다.</dd></div>
+          <div><dt>결과</dt><dd>주문 시간 1분 50초에서 36초 (테스트 회원 20명), 긴급배송 사용률 31.1%p 감소 (출시 직전 2주 대비 출시 한 달 뒤 2주)</dd></div>
+        </dl>
+        <div class="work-foot"><span class="work-more">자세히 보기 →</span><span class="work-time">읽는 시간 약 4분</span></div>
       </div>
     </a>
     <a class="work" href="projects/ad-platform.html" data-log="project_open" data-label="광고 성과 플랫폼">
       <div class="work-thumb t-slate"><img src="assets/img/ad-dashboard.webp" alt="광고 성과 플랫폼 화면" loading="lazy"></div>
       <div class="work-meta">
-        <span class="work-cat">B2B 플랫폼, 광고주 셀프서비스</span><span class="work-year">2025.10 — 2026.04</span>
+        <span class="work-cat">B2B 플랫폼, 광고주 셀프서비스</span><span class="work-year">2025.10 ~ 2026.04</span>
         <h3 class="work-title">광고 성과 플랫폼</h3>
-        <p class="work-sub">수기 보고서를 광고주 직접 조회로 바꾼 데이터센터</p>
-        <div class="work-num"><span><b>12초</b>건당 보고서 작성</span><span><b>20분</b>기존 수기 작성</span></div>
+        <dl class="work-sum">
+          <div><dt>문제</dt><dd>셀러툴에 광고 성과를 분석할 도구가 없어, Spotfire 수기 보고서로 대응하고 있었습니다.</dd></div>
+          <div><dt>결과</dt><dd>건당 광고 성과 보고서 작성 시간 20분에서 12초 (내부 업무 기준), 광고주가 성과를 직접 확인하는 구조로 전환</dd></div>
+        </dl>
+        <div class="work-foot"><span class="work-more">자세히 보기 →</span><span class="work-time">읽는 시간 약 3분</span></div>
       </div>
     </a>
     <a class="work" href="projects/code-maker.html" data-log="project_open" data-label="AI 코드메이커">
@@ -97,8 +129,11 @@ try{ if(!sessionStorage.getItem('introSeen') && !matchMedia('(prefers-reduced-mo
       <div class="work-meta">
         <span class="work-cat">업무 자동화, 생성형 AI 활용</span><span class="work-year">2026.01</span>
         <h3 class="work-title">AI 코드메이커</h3>
-        <p class="work-sub">Spotfire 전처리를 누구나 하게 만든 커스텀 봇</p>
-        <div class="work-num"><span><b>10분 이내</b>데이터 확인까지</span><span><b>30%</b>오류율 감소</span></div>
+        <dl class="work-sum">
+          <div><dt>문제</dt><dd>Spotfire 기본 기능으로 풀리지 않는 전처리가 반복됐고, 파이썬을 모르면 분석이 멈췄습니다.</dd></div>
+          <div><dt>결과</dt><dd>필요한 데이터를 확인하기까지 2~3일에서 10분 이내, 오류율 30% 감소 (초기 테스트 대비)</dd></div>
+        </dl>
+        <div class="work-foot"><span class="work-more">자세히 보기 →</span><span class="work-time">읽는 시간 약 2분</span></div>
       </div>
     </a>
     </div>
@@ -107,7 +142,8 @@ try{ if(!sessionStorage.getItem('introSeen') && !matchMedia('(prefers-reduced-mo
 
 <section class="block" id="others" data-view="추가 경험" style="padding-top:0">
   <div class="container">
-    <div class="s-head"><h2>More Works<sup>04</sup></h2><p>대표 사례보다 범위가 작거나, 검증 단계에서 멈춘 과제입니다.</p></div>
+    <div class="s-head"><h2>그 밖의 프로젝트<sup>4</sup></h2><p>대표 프로젝트보다 범위가 작거나, 검증 단계에서 멈춘 과제입니다.</p></div>
+    <p class="hint">제목을 누르면 배경, 한 일, 과정이 펼쳐집니다.</p>
     <div class="others">
     <details class="other" data-log="other_open" data-label="이탈처 예측 분석">
       <summary><span class="o-no">01</span><span class="o-title">이탈처 예측 분석</span><span class="o-sub">더샵 회원 이탈 조기 경고</span><span class="o-plus" aria-hidden="true"></span></summary>
@@ -128,35 +164,22 @@ try{ if(!sessionStorage.getItem('introSeen') && !matchMedia('(prefers-reduced-mo
     </div>
   </div>
 </section>
-
-<section class="block" id="about" data-view="소개" style="padding-top:0">
-  <div class="container">
-    <div class="s-head"><h2>About</h2><p>이력, 학습, 도구, 수상은 About 페이지에 정리했습니다.</p></div>
-    <div class="about-teaser">
-      <p class="lead-xl">데이터에서 고객 행동을 발견하고, 문제를 정의하고, 가설을 검증해 실제 화면과 정책으로 바꿉니다.</p>
-      <div>
-        <ol class="steps5"><li><small>1</small><b>발견</b><span>'주문 누락' 긴급배송 이용 사유 설문 결과</span></li><li><small>2</small><b>정의</b><span>46.8% 같은 상품을 10회 이상 사는 회원 비중</span></li><li><small>3</small><b>가설과 검증</b><span>63.6%에서 85.1% 알림 정확도 기준 70% 달성</span></li><li><small>4</small><b>결정</b><span>알림 대신 화면 약국 5곳 인터뷰 후 재고 정보 화면 표시</span></li><li><small>5</small><b>출시</b><span>1분 50초에서 36초 테스트 회원 20명의 주문 시간</span></li></ol>
-        <a class="pill" href="about.html">About 더 보기 <span class="arr">→</span></a>
-      </div>
-    </div>
-  </div>
-</section>
 </main>
 <section class="contact-band" id="contact" data-view="연락">
   <div class="container">
-    <p class="eyebrow">Contact</p>
+    <p class="eyebrow">연락</p>
     <h2>데이터에서 문제를 찾고, 화면으로 끝내는 기획을 함께하고 싶습니다.</h2>
-    <p>포지션이나 프로젝트에 관해 편하게 연락해 주세요. 주소를 누르면 복사됩니다.</p>
+    <p>포지션이나 프로젝트에 관해 편하게 연락해 주세요. 아래 주소를 누르면 메일 주소가 복사됩니다.</p>
     <button class="contact-mail" type="button" data-mail="ksoonykny@naver.com" data-log="email_copy" data-label="메일 주소">ksoonykny@naver.com</button>
     <div class="pills">
-      <button class="pill light solid" type="button" data-mail="ksoonykny@naver.com" data-log="email_copy" data-label="이메일 버튼">이메일 복사하기</button>
-      <a class="pill light" href="assets/kwon-nayoung-portfolio.pdf" download="권나영_서비스기획_포트폴리오.pdf" data-log="pdf_download" data-label="연락 영역">PDF 다운로드 <span class="arr">↓</span></a>
+      <button class="pill light solid" type="button" data-mail="ksoonykny@naver.com" data-log="email_copy" data-label="이메일 버튼">메일 주소 복사</button>
+      <a class="pill light" href="assets/kwon-nayoung-portfolio.pdf" download="권나영_서비스기획_포트폴리오.pdf" data-log="pdf_download" data-label="연락 영역">PDF 포트폴리오 받기 <span class="arr">↓</span></a>
     </div>
   </div>
 </section>
 <footer class="site-foot">
   <div class="container">
-    <span>© 2026 권나영. Service Planner Portfolio</span>
+    <span>© 2026 권나영 서비스 기획 포트폴리오</span>
     <a href="#top">맨 위로</a>
   </div>
 </footer>
