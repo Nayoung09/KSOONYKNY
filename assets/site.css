@@ -767,3 +767,11 @@ body{background:var(--bg);color:var(--ink);font-size:17px}
   .cursor{display:none}
   .work,.work *{cursor:pointer}
 }
+
+/* 그 밖의 프로젝트 묶음 */
+.o-group{margin-top:44px}
+.o-group:first-of-type{margin-top:8px}
+.o-gh{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;margin:0 0 14px}
+.o-gh b{font-size:18px;font-weight:700}
+.o-gh span{font-size:14px;color:var(--muted)}
+.o-group .others{border-top:1px solid var(--ink)}
